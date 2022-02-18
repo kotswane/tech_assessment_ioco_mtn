@@ -22,7 +22,7 @@ Deployment Guide
 	
 	export ROBOTS_ENDPOINT=https://robotstakeover20210903110417.azurewebsites.net/robotcpu
 
-3) Insure that you have mysql installed and running on you machine and import the following sql file and allow root user to login without password
+3) Insure that you have mysql installed and running on your machine and import the following sql file and allow root user to login without password
 
    ioco.sql
 
