@@ -11,10 +11,15 @@ Deployment Guide
 3) Use the same terminal to export the following environment variables
 	
 	export DATABASE_HOST=localhost
+	
 	export DATABASE_PORT=3306
+	
 	export DATABASE_USER=root
+	
 	export DATABASE_PASS=
+	
 	export DATABASE_NAME=ioco
+	
 	export ROBOTS_ENDPOINT=https://robotstakeover20210903110417.azurewebsites.net/robotcpu
 
 3) Insure that you have mysql installed and running on you machine and import the following sql file and allow root user to login without password
