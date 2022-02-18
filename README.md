@@ -30,3 +30,49 @@ Deployment Guide
 ==============================================================================================
 
 Test Instructions
+
+1) Test tools
+
+   Postman, Command line Curl or any RestClient application
+
+2) Test Cases
+
+   - Register Survivor
+
+     Endpoint: localhost:8081/api/v1/survivor
+
+     Http Method: POST
+
+     Content-Type: application/json
+
+     Request: {"latitude":"20.1", "longitude":"10.1", "name":"name", "age":"12", "gender":"Male", "inventory": {"water":"Yes","food":"No","medication":"Yes", "ammunition":"No"}}
+
+     Expected Response: {"message":"Successfully registered"}
+
+   - Update location
+
+     Endpoint: localhost:8081/api/v1/survivor_location/1
+
+     Http Method: PUT
+
+     Content-Type: application/json
+
+     Request: {"latitude": "120","longitude":"999"}
+
+     Expected Response: {"message":"Location updated"}
+
+   - Flag Survivor 
+
+     Endpoint: localhost:8081/api/v1/survivor_flag
+
+     Http Method: POST
+
+     Content-Type: application/json
+
+     Request: {"sur_id": "1"}
+
+     Expected Response: {"message": "survivor not infected"}
+
+     Expected Response: {"message": "survivor infected"}
+     
+   -
